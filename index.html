@@ -18,11 +18,13 @@
     <hr>
     <h4> Input type="text" cria uma caixa de texto: </h4>
     <form>
+        <div class="question">
         <label for="name"> Insert Name: </label>
         <input type="text" id="name" value="Insira nome aqui" > <br>
-        <p> Podemos adicionar o atributo "id" no input. Será útil mais tarde. </p>
-        <p> Com o atributo value, podemos adicionar uma resposta padrão a caixa de texto. Nesse caso, value="Insira nome aqui" </p>
+        </div>
     </form>
+    <p> Podemos adicionar o atributo "id" no input. Será útil mais tarde. </p>
+    <p> Com o atributo value, podemos adicionar uma resposta padrão a caixa de texto. Nesse caso, value="Insira nome aqui" </p>
     <hr>
     <h4> Usando o type="radio", podemos criar uma pergunta objetiva onde apenas uma resposta é selecionável: </h4>
     <form>
@@ -86,24 +88,39 @@
         <label for="toxicity"> Falou "ez" ao invez de "gg" depois de ganhar um jogo </label> <br>
         <input type="checkbox" id="beans">
         <label for="beans"> Comeu todo o sorvete, encheu o pote de feijão e colocou de volta na geladeira </label> <br>
+        <br>
         </div>
         </div>
     </div>
     </form>
-    <h4> Ta </h4>
+    <hr>
+    <h4> Também podemos usar os tipos "date", "time", "datetime" e "datetime-local" para pedir por informações de tempo: </h4>
     <form>
+        <div class="flex">
+        <div class="question">
         <label for="birthday"> Insert your birth date: </label>
-        <input type="date" id="birthday">
-        <label for="dateandtime"> Insert your birth date: </label>
-        <input type="time" id="birthday">
-        <label for="birthday"> Insert your birth date: </label>
-        <input type="datetime" id="birthday">
-        <label for="birthday"> Insert your birth date: </label>
-        <input type="datetime" id="birthday">
+        <input type="date" id="birthday"> <br>
+        <label for="dateandtime"> Insert some random hour of the day: </label>
+        <input type="time" id="birthday"> <br>
+        <label for="birthday"> Insert a date and time: </label>
+        <input type="datetime" id="birthday"> <br>
+        <label for="birthday"> Insert a date and time but easier: </label>
+        <input type="datetime-local" id="birthday"> <br>
+        </div>
+        </div>
     </form>
-    <h4>  </h4>
+    
+    <h4> Com o type="color", podemos pedir uma cor ao usuário: </h4>
     <form>
-        <input type="color">
+        <div class="question">
+        <p> Escolha uma cor: </p>
+        <input type="color"> <br>
+        <br>
+        </div>
     </form>
+    <hr>
+    <h2> Para criar as legendas de cada input, se usa a tag "LABEL" </h2>
+    <h3> Ela foi usada até agora para informar o usuário o que cada opção representa. </h3>
+    <h4> A Label se destaca pela proprieda "for", onde você indica de qual input essa label é. </h4>
 </body>
 </html>
