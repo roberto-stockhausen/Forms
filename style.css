@@ -1,3 +1,7 @@
+body{
+    background-color: rgb(203, 132, 209);
+    color: rgb(255, 255, 255);
+}
 .form{
     background-color: aqua;
 }
@@ -11,13 +15,15 @@
 }
 .wizard{
     height: 120px;
+    border: 2px solid rgb(0, 0, 0);
 }
 .question{
-background-color: beige;
+background-color: rgb(81, 37, 122);
 padding: 12px;
+border: 4px solid rgb(0, 0, 0);
 }
 #headman{
-    background-color: rgb(203, 132, 209);
+    background-color: rgb(81, 37, 122);
     color: rgb(0, 0, 0);
     justify-content: space-between;
     align-items: center;
