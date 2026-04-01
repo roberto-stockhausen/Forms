@@ -9,8 +9,15 @@
     height: 240px;
     border-radius: 12px;
 }
+.wizard{
+    height: 120px;
+}
+.question{
+background-color: beige;
+padding: 12px;
+}
 #headman{
-    background-color: rgb(255, 245, 190);
+    background-color: rgb(203, 132, 209);
     color: rgb(0, 0, 0);
     justify-content: space-between;
     align-items: center;

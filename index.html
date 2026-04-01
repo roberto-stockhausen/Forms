@@ -36,16 +36,19 @@
         </form>
         <p> Com o atributo "name" podemos definir de qual questão a alternativa é. Se cada opção tiver um "name" diferente, todas elas serão selecionáveis: </p> 
         <form>
+        <div class="question">
         <p> Qual a palavra mais difícil de falar? </p>
-        <input type="radio" id="Sorry" name="name1"> 
-        <label for="Super"> Me desculpe </label> <br>
-        <input type="radio" id="Wrong" name="name2"> 
-        <label for="Laser"> Eu estava errado </label> <br>
-        <input type="radio" id="Sauce" name="name3"> 
-        <label for="Piss"> Worcestershire sauce </label> <br>
+        <input type="radio" id="Sorry2" name="name1"> 
+        <label for="Sorry2"> Me desculpe </label> <br>
+        <input type="radio" id="Wrong2" name="name2"> 
+        <label for="Wrong2"> Eu estava errado </label> <br>
+        <input type="radio" id="Sauce2" name="name3"> 
+        <label for="Sauce2"> Worcestershire sauce </label> <br>
+        </div>
         </form>
         <p> Sem usar line break, podemos até fazer opções horizontais: </p>
     <form>
+        <div class="question">
         <p> Rate this form: </p>
         <label for="smaller"> PATHETIC </label>
         <input type="radio" id="smaller" name="bigsmall">
@@ -54,11 +57,18 @@
         <input type="radio" id="big" name="bigsmall">
         <input type="radio" id="bigger" name="bigsmall">
         <label for="smaller"> GLORIOUS </label>
+        </div>
     </form>
     <hr>
     <h4> Com a tag "checkbox" é possível criar opções de mulipla escolha, ou opções que podem ser marcadas e desmarcadas </h4>
     <form>
+        <div class="question">
         <p> Obrigado por mandar seu currículo para WorldofDark inc. Compania de bruxos. Insira algumas ações malignas que você já cometeu para evaluarmos se você se encaixa nessa posição: </p>
+        <div class="flex">
+        <div>
+        <img class="wizard" src="DarkWizard.jpg" alt="Wizard">
+        </div>
+        <div>
         <input type="checkbox" id="sacrifice">
         <label for="sacrifice"> Sacrificou pelo menos uma criança </label> <br>
         <input type="checkbox" id="arson">
@@ -71,6 +81,24 @@
         <label for="toxicity"> Falou "ez" ao invez de "gg" depois de ganhar um jogo </label> <br>
         <input type="checkbox" id="beans">
         <label for="beans"> Comeu todo o sorvete, encheu o pote de feijão e colocou de volta na geladeira </label> <br>
+        </div>
+        </div>
+    </div>
+    </form>
+    <h4> Ta </h4>
+    <form>
+        <label for="birthday"> Insert your birth date: </label>
+        <input type="date" id="birthday">
+        <label for="dateandtime"> Insert your birth date: </label>
+        <input type="time" id="birthday">
+        <label for="birthday"> Insert your birth date: </label>
+        <input type="datetime" id="birthday">
+        <label for="birthday"> Insert your birth date: </label>
+        <input type="datetime" id="birthday">
+    </form>
+    <h4>  </h4>
+    <form>
+        <input type="color">
     </form>
 </body>
 </html>
