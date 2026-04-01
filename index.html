@@ -3,30 +3,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Formulário </title>
+    <link rel="stylesheet" href="style.css">
     <script src="script.js"> </script>
 </head>
 <body>
+    <head>
+    <div id="headman">
     <h1> Criando formulários com HTML </h1>
+    <img class="lick" src="liq-p.jpg" alt="Liq">
+    </div>
+    </head>
     <h2> Para criar um formulário, se usa a tag FORM </h2>
+    <h3> Usando a tag input, podemos pedir uma informação ao usuário. Ela tem alguns atributos, com o principal sendo "type", que indica que tipo de input será usado: </h3>
+    <hr>
+    <h4> Input type="text" cria uma caixa de texto: </h4>
     <form>
         <label for="name"> Insert Name: </label>
-        <input type="text" id="name" value="aj"\ > <br>
-        <input type="radio" id="Super" name="SuperLaserPiss"> 
-        <label for="Super"> SUPER </label> <br>
-        <input type="radio" id="Laser" name="SuperLaserPiss"> 
-        <label for="Laser"> LASER </label> <br>
-        <input type="radio" id="Piss" name="SuperLaserPiss"> 
-        <label for="Piss"> PISS </label> <br>
-        <p> And he said his dick is THIS </p>
-        <label for="smaller"> SMALL </label>
+        <input type="text" id="name" value="Insira nome aqui" > <br>
+        <p> Podemos adicionar o atributo "id" no input. Será útil mais tarde. </p>
+        <p> Com o atributo value, podemos adicionar uma resposta padrão a caixa de texto. Nesse caso, value="Insira nome aqui" </p>
+    </form>
+    <hr>
+    <h4> Usando o type="radio", podemos criar uma pergunta objetiva onde apenas uma resposta é selecionável: </h4>
+    <form>
+        <p> Qual a palavra mais difícil de falar? </p>
+        <input type="radio" id="Sorry" name="ShireSauce"> 
+        <label for="Super"> Me desculpe </label> <br>
+        <input type="radio" id="Wrong" name="ShireSauce"> 
+        <label for="Laser"> Eu estava errado </label> <br>
+        <input type="radio" id="Sauce" name="ShireSauce"> 
+        <label for="Piss"> Worcestershire sauce </label> <br>
+        </form>
+        <p> Com o atributo "name" podemos definir de qual questão a alternativa é. Se cada opção tiver um "name" diferente, todas elas serão selecionáveis: </p> 
+        <form>
+        <p> Qual a palavra mais difícil de falar? </p>
+        <input type="radio" id="Sorry" name="name1"> 
+        <label for="Super"> Me desculpe </label> <br>
+        <input type="radio" id="Wrong" name="name2"> 
+        <label for="Laser"> Eu estava errado </label> <br>
+        <input type="radio" id="Sauce" name="name3"> 
+        <label for="Piss"> Worcestershire sauce </label> <br>
+        </form>
+        <p> Sem usar line break, podemos até fazer opções horizontais: </p>
+    <form>
+        <p> Rate this form: </p>
+        <label for="smaller"> PATHETIC </label>
         <input type="radio" id="smaller" name="bigsmall">
         <input type="radio" id="small" name="bigsmall">
         <input type="radio" id="medium" name="bigsmall">
         <input type="radio" id="big" name="bigsmall">
         <input type="radio" id="bigger" name="bigsmall">
-        <label for="smaller"> BIG </label>
-        
-
+        <label for="smaller"> GLORIOUS </label>
+    </form>
+    <hr>
+    <h4> Com a tag "checkbox" é possível criar opções de mulipla escolha, ou opções que podem ser marcadas e desmarcadas </h4>
+    <form>
+        <p> Obrigado por mandar seu currículo para WorldofDark inc. Compania de bruxos. Insira algumas ações malignas que você já cometeu para evaluarmos se você se encaixa nessa posição: </p>
+        <input type="checkbox" id="sacrifice">
+        <label for="sacrifice"> Sacrificou pelo menos uma criança </label> <br>
+        <input type="checkbox" id="arson">
+        <label for="arson"> Incendiou um vilarejo </label> <br>
+        <input type="checkbox" id="witchcraft">
+        <label for="witchcraft"> Foi acusado de bruxaria </label> <br>
+        <input type="checkbox" id="heresy">
+        <label for="heresy"> Cometeu heresia </label> <br>
+        <input type="checkbox" id="toxicity">
+        <label for="toxicity"> Falou "ez" ao invez de "gg" depois de ganhar um jogo </label> <br>
+        <input type="checkbox" id="beans">
+        <label for="beans"> Comeu todo o sorvete, encheu o pote de feijão e colocou de volta na geladeira </label> <br>
     </form>
 </body>
 </html>
