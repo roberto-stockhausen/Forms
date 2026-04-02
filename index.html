@@ -13,12 +13,12 @@
     <label for="Catlabel"> <img class="lick" src="liq-p.jpg" alt="Liq"> </label>
     </div>
     </head>
-    <h2> Para criar um formulário, se usa a tag FORM </h2>
+    <h2> Para criar um formulário, se usa a tag "FORM" </h2>
     <h3> Essa tag define o espaço do formulário. Dentro dele serão colocados todas as tags que compõe-o. Também é importante colocar alguns atributos. </h3>
+    <p> O atributo "action" Define para onde as informações do formulário serão enviadas ao clicar no "submit". Normalmente é um servidor que possa processar essa informação ou arquivo relacionado a página com o formulário, talvez um arquivo .php </p>
+    <p> "method" Indica de que forma essas informações serão enviadas. "method="get" envia-os por meio de um URL, enquanto method="post" faz um pedido de HTTP. </p>
     <hr>
-    <h4> O atributo "action" Define para onde as informações do formulário serão enviadas ao clicar no "submit". Normalmente é um servidor que possa processar essa informação ou arquivo relacionado a página com o formulário, talvez um arquivo .php </h4>
-    <h4> "method" Indica de que forma essas informações serão enviadas. "method="get" envia-os por meio de um URL, enquanto method="post" faz um pedido de HTTP. </h4>
-    <h2> Para criar um dos campos do formulário, se usa a tag "input" </h2>
+    <h2> Para criar um dos campos do formulário, se usa a tag "INPUT" </h2>
     <h3> Usando a tag input, podemos pedir uma informação ao usuário. Ela tem alguns atributos, com o principal sendo "type", que indica que tipo de input será usado: </h3>
     <hr>
     <h4> Input type="text" cria uma caixa de texto: </h4>
@@ -126,9 +126,10 @@
     <hr>
     <h4> Com o type="submit", podemos enviar as informações dentro do form para o destino definido. </h4>
     <form action="Test.php" method="get">
+        <div class="question">
         <label for="name"> Insira qualquer coisa </label>
         <input type="text" id="name"> <br>
-        <input type="submit" value="Joshua">
+        <input type="submit" value="Submit">
         <br>
         </div>
     </form>
@@ -142,10 +143,38 @@
         <input type="text" id="label"> <br>
         <label for="nothing"> Clicar nesse texto não fará nada: </label>
         <input type="text"> <br>
-        <label for="Catlabel"> Clicar no gato no topo da página marcará ou desmarcará esse quadrado: </label>
+        <label for="nothing"> Clicar no gato no topo da página marcará ou desmarcará esse quadrado: </label>
         <input type="checkbox" id="Catlabel"> <br>
         </div>
+        </form>
+        <hr>
+    <h2> Para criar caixas de texto maiores, se usa a tag "TEXTAREA" </h2>
+    <h3> É recomendada para inputs de texto de múltiplas linhas e parágrafos, como redações ou feedbacks. </h3>
+    <div class="question">
+    <form action="Test.php" method="get">
+    <label for="feedback"> Nos conte o que você achou do formulário!: (Não importa o botão de enviar não funciona) </label> <br>
+    <textarea id="feedback" resize="none"> </textarea> <br>
+    <input type="submit" value="Enviar">
+    </div>
     </form>
-    <hr>
+    <h2> Para criar uma pergunta com várias opções em forma de texto. </h2>
+    <h3> É uma alternativa a usar input type="radio". Ao invez de um tipo de input, ele é uma tag própria. </h3>
+    <form>
+        <div class="question">
+            <label for="Joshua"> Escolha um salto carpado: </label>
+            <select name="Joshua" id="Josh">
+                <option value="1"> Salto carpado </option>
+                <option value="2"> Salto carpado duplo </option>
+                <option value="3"> Salto carpado triplo </option>
+            </select>
+        </div>
+    </form>
+    <h2> Para criar um botão que faz alguma coisa ao ser clicado, usamos a tag "BUTTOM" </h2>
+    <h3> Costumamos usar ela para executar funções de javascript usando o atributo "onclick", mas no contexto de formulário, ele é uma alternativa ao input type="submit", que pode enviar pedidos http para enviar informações de um formulário preenchido. </h3>
+    <form>
+        <div class="question">
+            <button class="buttomer"> Botão que acidentalmente reseta a página </button>
+        </div>
+    </form>
 </body>
 </html>
