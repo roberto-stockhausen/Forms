@@ -10,10 +10,15 @@
     <head>
     <div id="headman">
     <h1> Criando formulários com HTML </h1>
-    <img class="lick" src="liq-p.jpg" alt="Liq">
+    <label for="Catlabel"> <img class="lick" src="liq-p.jpg" alt="Liq"> </label>
     </div>
     </head>
     <h2> Para criar um formulário, se usa a tag FORM </h2>
+    <h3> Essa tag define o espaço do formulário. Dentro dele serão colocados todas as tags que compõe-o. Também é importante colocar alguns atributos. </h3>
+    <hr>
+    <h4> O atributo "action" Define para onde as informações do formulário serão enviadas ao clicar no "submit". Normalmente é um servidor que possa processar essa informação ou arquivo relacionado a página com o formulário, talvez um arquivo .php </h4>
+    <h4> "method" Indica de que forma essas informações serão enviadas. "method="get" envia-os por meio de um URL, enquanto method="post" faz um pedido de HTTP. </h4>
+    <h2> Para criar um dos campos do formulário, se usa a tag "input" </h2>
     <h3> Usando a tag input, podemos pedir uma informação ao usuário. Ela tem alguns atributos, com o principal sendo "type", que indica que tipo de input será usado: </h3>
     <hr>
     <h4> Input type="text" cria uma caixa de texto: </h4>
@@ -109,7 +114,7 @@
         </div>
         </div>
     </form>
-    
+    <hr>
     <h4> Com o type="color", podemos pedir uma cor ao usuário: </h4>
     <form>
         <div class="question">
@@ -119,8 +124,28 @@
         </div>
     </form>
     <hr>
+    <h4> Com o type="submit", podemos enviar as informações dentro do form para o destino definido. </h4>
+    <form action="Test.php" method="get">
+        <label for="name"> Insira qualquer coisa </label>
+        <input type="text" id="name"> <br>
+        <input type="submit" value="Joshua">
+        <br>
+        </div>
+    </form>
+    <hr>
     <h2> Para criar as legendas de cada input, se usa a tag "LABEL" </h2>
     <h3> Ela foi usada até agora para informar o usuário o que cada opção representa. </h3>
-    <h4> A Label se destaca pela proprieda "for", onde você indica de qual input essa label é. </h4>
+    <h4> A Label se destaca pelo atributo "for", onde você indica de qual input essa label é. Dentro desse "for" podemos colocar o id de um input. Isso faz com que clicar no conteúdo da label acesse ou ative o input. </h4>
+    <form>
+        <div class="question">
+        <label for="label"> Clicar nesse texto acessará essa caixa de texto: </label>
+        <input type="text" id="label"> <br>
+        <label for="nothing"> Clicar nesse texto não fará nada: </label>
+        <input type="text"> <br>
+        <label for="Catlabel"> Clicar no gato no topo da página marcará ou desmarcará esse quadrado: </label>
+        <input type="checkbox" id="Catlabel"> <br>
+        </div>
+    </form>
+    <hr>
 </body>
 </html>
